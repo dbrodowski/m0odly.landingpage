@@ -70,6 +70,7 @@ header .container {
 .main-nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .main-nav ul {
@@ -77,6 +78,7 @@ header .container {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .main-nav a {
