@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Conditions for DTB - Don't Break The Chain habit tracker app.">
+    <title>Terms of Conditions - DTB | Don't Break The Chain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25" r="24" stroke="currentColor" stroke-width="2"/>
+                        <path d="M15 25L22 32L35 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-conditions.html" class="active">Terms of Conditions</a></li>
+                </ul>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀️</span>
+                <span class="moon-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-content">
+                <h1>Terms of Conditions</h1>
+                
+                <p><strong>Last updated: January 11, 2026</strong></p>
+
+                <h2>Agreement to Terms</h2>
+                <p>By downloading, installing, or using the DTB - Don't Break The Chain app, you agree to be bound by these Terms of Conditions. If you do not agree to these terms, please do not use the app.</p>
+
+                <h2>License</h2>
+                <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the DTB app for personal, non-commercial purposes in accordance with these Terms of Conditions.</p>
+
+                <h2>User Responsibilities</h2>
+                <p>You agree to:</p>
+                <ul>
+                    <li>Use the app only for lawful purposes</li>
+                    <li>Not attempt to reverse engineer or modify the app</li>
+                    <li>Not use the app in any way that could damage or impair the service</li>
+                    <li>Maintain the security of your device and app data</li>
+                </ul>
+
+                <h2>Intellectual Property</h2>
+                <p>The app and its entire contents, features, and functionality are owned by DTB and are protected by international copyright, trademark, and other intellectual property laws.</p>
+
+                <h2>Disclaimer of Warranties</h2>
+                <p>The app is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind, either express or implied. We do not warrant that the app will be uninterrupted, secure, or error-free.</p>
+
+                <h2>Limitation of Liability</h2>
+                <p>In no event shall DTB, its directors, employees, or agents be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or relating to your use of the app.</p>
+
+                <h2>Changes to Terms</h2>
+                <p>We reserve the right to modify these terms at any time. We will notify users of any changes by updating the "Last updated" date at the top of these Terms of Conditions.</p>
+
+                <h2>Termination</h2>
+                <p>We may terminate or suspend your access to the app immediately, without prior notice, for any reason, including if you breach these Terms of Conditions.</p>
+
+                <h2>Governing Law</h2>
+                <p>These terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions.</p>
+
+                <h2>Contact Us</h2>
+                <p>If you have any questions about these Terms of Conditions, please contact us at: support@dtbapp.com</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-conditions.html">Terms of Conditions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const theme = body.getAttribute('data-theme');
+            const newTheme = theme === 'light' ? 'dark' : 'light';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+</body>
+</html>
