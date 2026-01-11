@@ -62,6 +62,14 @@ header .container {
     opacity: 0.7;
 }
 
+.logo img {
+    display: block;
+}
+
+[data-theme="dark"] .logo img {
+    filter: brightness(0) invert(1);
+}
+
 .logo svg {
     color: var(--text-color);
 }
