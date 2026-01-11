@@ -97,6 +97,11 @@ header .container {
     padding: 15px 0;
 }
 
+.theme-toggle-wrapper .container {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .theme-toggle {
     background: none;
     border: 2px solid var(--text-color);
