@@ -93,8 +93,11 @@ header .container {
 }
 
 /* Theme Toggle Button */
+.theme-toggle-wrapper {
+    padding: 15px 0;
+}
+
 .theme-toggle {
-    align-self: flex-end;
     background: none;
     border: 2px solid var(--text-color);
     border-radius: 50px;
